@@ -36,6 +36,9 @@ public class Silnia {
     }
 
     public static int silniaMulti(int n) {
+        /*
+        5.	Napisz program obliczający silnię bez użycia rekurencji
+         */
         int pom = 1;
         if (n <= 0) {
         } else {
