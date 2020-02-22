@@ -22,6 +22,9 @@ public class Silnia {
             //          System.out.println("Suma dodawania od 1 do " + i + " wynosi " + silniaDodawana(i));
             System.out.println("Ciag Fibonacciego dla n = " + i + " wynosi " + fibonacci(i));
         }
+        for (int i = 1; i <= n; i++) {
+            System.out.println("Silnia dla n = " + i + " wynosi " + silniaMulti(i));
+        }
     }
 
     public static int silnia(int n) {
@@ -32,12 +35,25 @@ public class Silnia {
 
     }
 
+    public static int silniaMulti(int n) {
+        int pom = 1;
+        if (n <= 0) {
+        } else {
+            for (int i = 1; i <= n; i++) {
+                pom = pom * i;
+            }
+
+        }
+        return pom;
+
+    }
+
     public static int silniaDodawana(int n) {
         if (n == 0) {
             return 0;
-        } else
+        } else {
             return (n + silniaDodawana(n - 1));
-
+        }
     }
 
     public static int fibonacci(int n) {
@@ -49,3 +65,4 @@ public class Silnia {
         return fibonacci(n - 1) + fibonacci(n - 2);
     }
 }
+
