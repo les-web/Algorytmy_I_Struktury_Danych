@@ -9,11 +9,20 @@ public class IsPalindrome {
         7.	Napisz program rekurencyjny sprawdzający, czy słowo jest palindromem
          */
         Scanner scanner = new Scanner((System.in));
-        String word;
-        System.out.println("Input your word ");
-        word = scanner.nextLine();
-        System.out.println(word);
-        System.out.println(" Słowo " + word + "  to palindrom   " + isPalindrome(word));
+        String word = "gogogo";
+        do {
+
+
+            System.out.println("Input your word, exit finishes program. ");
+            word = scanner.nextLine();
+
+            if (word.startsWith("exit")) {
+                break;
+            }
+
+            System.out.println(word);
+            System.out.println(" Słowo " + word + "  to palindrom   " + isPalindrome(word));
+        } while (true);
     }
 
     static boolean isPalindrome(String inputWord) {
