@@ -14,10 +14,10 @@ public class sortWstawianie {
         sortByInserting(a);
         System.out.println(Arrays.toString(a));
 
-        int b[] = {54, 26, -77, 22, 300, 93, 1, 1, 1, 17, 77, -10, -33, 31, 300, 1, 22, 44, 55, 20, 2, 456, 3, 700, 7};
+        int b[] = {54, 26, -77, 22, 300, 93, 1, 1, 1, 17, 77, -10, -33, 31, 300, 1, 22, 444, 44, 55, 20, 2, 456, 3, 700, 7};
         System.out.println("Tablica wejściowa");
         System.out.println(Arrays.toString(b));
-        sortBuBubbling(b);
+        sortByBubbling(b);
         System.out.println("Tablica posrtowana metoda babelkowania");
         System.out.println(Arrays.toString(b));
 
@@ -37,7 +37,7 @@ public class sortWstawianie {
         }
     } // end of sortByInserting
 
-    public static void sortBuBubbling(int[] inputArray) {
+    public static void sortByBubbling(int[] inputArray) {
         for (int i = 0; i < inputArray.length - 1; i++) {
             for (int j = 0; j < inputArray.length - i - 1; j++) {
                 if (inputArray[j] > inputArray[j + 1]) {
