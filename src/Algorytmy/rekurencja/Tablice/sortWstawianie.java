@@ -6,8 +6,11 @@ public class sortWstawianie {
 
     public static void main(String[] args) {
 
-        int[] a = {54, 26, 22,300,93, 1,1,1,17, 77, 31,300, 1,22,44, 55, 20};
+        int[] a = {54, 26, -77,22,300,93, 1,1,1,17, 77, -10,-33,31,300, 1,22,44, 55, 20,2,456,3,700,7};
+        System.out.println("Tablica wejściowa");
         System.out.println(Arrays.toString(a));
+        System.out.println("Tablica posortowana ");
+
         sortByInserting(a);
         System.out.println(Arrays.toString(a));
 
