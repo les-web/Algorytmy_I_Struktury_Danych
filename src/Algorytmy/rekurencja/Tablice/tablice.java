@@ -16,8 +16,8 @@ public class tablice {
         System.out.println("Sumowanie elementow tablicy");
         int razem = sumaElementowWTablicy(wyjscie);
         System.out.println("Suma elementow tablicy = " + razem);
-    //    int ilosc = wyjscie.length;
-    //    double srednia = razem / ilosc;
+        //    int ilosc = wyjscie.length;
+        //    double srednia = razem / ilosc;
         System.out.println("Srednia z wszystkich elementow tablicy = " + sredniaElementowWTablicy(wyjscie));
 
 
@@ -39,6 +39,7 @@ public class tablice {
         }
         return suma;
     }
+
     private static double sredniaElementowWTablicy(int[] a) {
         int suma = sumaElementowWTablicy(a);
         double srednia = suma / a.length;
