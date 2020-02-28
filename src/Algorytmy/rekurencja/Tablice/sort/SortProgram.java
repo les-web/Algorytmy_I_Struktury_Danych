@@ -1,5 +1,7 @@
 package Algorytmy.rekurencja.Tablice.sort;
 
+import java.util.Arrays;
+
 public class SortProgram {
 
     public static void main(String[] args) {
@@ -13,7 +15,7 @@ public class SortProgram {
     private static void testInsertSort() {
 
         System.out.println("Sortowanie przez wstawianie");
-        int[] tab = { 4, 3, 1, 9, 0, 15, 7, 2, 8 };
+        int[] tab = { 4, 3, 1, 9, 0, 15, 7, 2, 8,77,-21,44,-6 };
         InsertSort.sort(tab);
 
         for (int i = 0; i < tab.length; i++) {
@@ -49,13 +51,17 @@ public class SortProgram {
 
     private static void testMergeSort() {
         System.out.println("Sortowanie przez scalanie");
-        int[] tab = { 4, 3, 1, 9, 0, 15, 7, 2, 8 };
+        int[] tab = { 4, 3, 1, 9, 0, 15, 7, 2, 8,45,-23,234,-1 };
+        System.out.println(("Input  "));
+        System.out.println(Arrays.toString(tab));
         MergeSort.sort(tab, 0, tab.length - 1);
+        System.out.println(("Output  "));
+        System.out.println(Arrays.toString(tab));
 
-        for (int i = 0; i < tab.length; i++) {
-            System.out.print(tab[i] + " ");
-        }
-        System.out.println();
+//        for (int i = 0; i < tab.length; i++) {
+//            System.out.print(tab[i] + " ");
+//        }
+//        System.out.println();
     }
 
     private static void quicksort(int[] tab, int left, int right) {
