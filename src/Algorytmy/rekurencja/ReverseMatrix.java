@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class ReverseMatrix {
     static public void main(String[] args) {
-        int [] tablica = {1,2,3,4,5,6,7,8,9,10};
+        int [] tablica = {1,2,3,4,5,6,7,8,9,10,11};
         System.out.println(Arrays.toString(tablica));
         reverseMatrix(tablica, 0); // odwracamy element nr 0 i ostatni, wywolujac kolejno 1 i n-1,2 n-2
         System.out.println(Arrays.toString(tablica));
