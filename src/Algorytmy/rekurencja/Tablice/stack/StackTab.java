@@ -2,9 +2,9 @@ package Algorytmy.rekurencja.Tablice.stack;
 
 public class StackTab {
 
-    int[] stack;
+    int[] stack;  // array immitates stack, warning: arrays index starts with 0, stack index starts with 1
     //    int size;
-    int index;
+    int index; // actual number of elements in a stack
 
     public StackTab(int size) {
         //       this.size = size;
@@ -23,14 +23,14 @@ public class StackTab {
         if (index == 0) {
             throw new Exception("Stos jest pusty");
         }
-        return stack[index-1];
+        return stack[index - 1];
     }
 
     public int search(int value) {
         int out = -1;
-        for (int j = index-1; j >= 0; j--) {
+        for (int j = index - 1; j >= 0; j--) {
             if (stack[j] == value) {
-                out = j+1;
+                out = j + 1;
                 break;
 
             }
@@ -54,11 +54,11 @@ public class StackTab {
 
     public void print() {
         System.out.println("[ ");
-        for (int i = 0; (i>0 && i < index-2); i++) {
+        for (int i = 0; (i > 0 && i < index - 2); i++) {
             System.out.print(stack[i] + " , ");
 
         }
-        System.out.print(stack[index-1]+ "  ]");
+        System.out.print(stack[index - 1] + "  ]");
         System.out.println();
     }
 }
