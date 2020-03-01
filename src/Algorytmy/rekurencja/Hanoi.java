@@ -14,6 +14,7 @@ public class Hanoi {
         Scanner scannner = new Scanner(System.in);
         int n;
         System.out.println("Podaj n");
+        System.out.println();
         n = scannner.nextInt();
         System.out.println("Dla n = " + n + " Hanoi = " + hanoi(n));
         for (int i = 1; i <= n ; i++) {
